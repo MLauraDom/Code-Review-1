@@ -37,42 +37,36 @@
     #first {
         text-align: center;
         font-size: 3em;
-        padding: 0% 20% 0% 20%;
+        padding: 0% 30% 0% 30%;
     }
 
-    #samsung {
+    .samsung {
         display: block;
-        height: 40%;
+        height: 400px;
         width: 100%;
         margin: 0%;
-        object-fit: contain;
+        object-fit: cover;
+        position: relative;
     }
 
     .art1 {
         width: 49%;
-        height: 40%;
+        height: 400px;
         margin: 0px;
-        float: left;
-        float: top;
-        object-fit: contain;
+        padding: 0px;
+        object-fit: cover;
+        float:left;
+        position: relative;
     }
 
     .art2 {
         width: 49%;
-        height: 40%;
+        height: 400px;
         margin: 0px;
-        position: relative;
+        padding: 0px;
+        object-fit: cover;
         float: right;
-        float: top;
-        object-fit: contain;
-    }
-
-    footer {
-        width: 100%;
-        height: 20%;
-        background-color: rgb(155, 154, 154);
-        text-align: center;
-        margin: auto;
+        position: relative;
     }
 
     a {
@@ -82,20 +76,22 @@
         font-size: 1.5em;
     }
 
-    main {
-        margin: auto;
-        padding: 0% 5% 0% 5%;
-    }
-
     dl li {
         display: inline-block;
         padding: 1%;
     }
 
-    .col {
+    #foot {
         width: 100%;
-        height: 40%;
+        background-color: rgb(155, 154, 154);
+        text-align: center;
+        height: 160px;
         margin: auto;
+        position: relative;
+            bottom:0%;
+    }
+    .container {
+        padding: 0% 5% 0% 5%;
         position: relative;
     }
 </style>
@@ -119,22 +115,18 @@
         </nav>
     </header>
     <main>
-        <div id="first">
-            <h3>This is my first Website :D</h3>
-        </div>
-        <div class=col>
-        <img id="samsung" src="img/Phone.png" alt="Phone">
-        <center>
-            <h3>
-                Samsung Galaxy S11/S20 Plus video leaks showing Phone in real life
-            </h3>
-        </center>
-        </div>
-        <div class=col>
-        <img class=art1 src="img/Debit_card_ATM.jpg" alt="Debitcard">
-        <img class=art2 src="img/Taxify-Scooters.jpg" alt="Taxi">
-        </div>
-        <div class=col>
+        <div class=container>
+            <div id="first">
+                <h3>This is my first Website :D</h3>
+            </div>
+            <img class=samsung src="img/Phone.png" alt="Phone">
+            <center>
+                <h3 class=samsung>
+                    Samsung Galaxy S11/S20 Plus video leaks showing Phone in real life
+                </h3>
+            </center>
+            <figure><img class=art1 src="img/Debit_card_ATM.jpg" alt="Debitcard"></figure>
+            <figure><img class=art2 src="img/Taxify-Scooters.jpg" alt="Taxi"></figure>
             <h3 class=art1>
                 Police are Investigating three ATM Explosions in two Florida
                 counties
@@ -143,12 +135,11 @@
                 E-Scooter firm Bolt pulls out of 12 cities
             </h3>
         </div>
+        <footer id="foot">
+            <img src="img/logo.png" alt="CodeFactory" width="20%" margin="auto">
+            <p>Laura Moldovan CodeFactory 2021</p>
+        </footer>
     </main>
-    <br />
-    <footer>
-        <img src="img/logo.png" alt="CodeFactory" width="20%" margin="auto">
-        <p>Laura Moldovan CodeFactory 2021</p>
-    </footer>
 </body>
 
 </html>
