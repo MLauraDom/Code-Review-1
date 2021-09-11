@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header {
+      background-color: rgb(155, 154, 154)
+  }  
+  
+  #name {
+    display: inline-block;
+    margin: auto;
+    width: 40%;
+    position: relative;
+    right: -20%;
+  }
+  
+  #logo1 {
+    display: inline-block;
+    padding: 20px;
+    width: 25%;
+    position: relative;
+    right: -30%;
+  }
+  
+  #logo2{
+      margin:auto;
+      display: block;
+      width: 20%;
+      padding: 1%;
+  }
+  
+  #menu {
+    text-align: right;
+    background-color: rgb(185, 79, 79);
+    padding: 0% 5% 0% 0%;
+  }
+  
+  #first {
+    text-align: center;
+    font-size: 3em;
+    padding: 0% 30% 0% 30%;
+    position: relative;
+    float: top;
+  }
+  
+  .samsung {
+    display: block;
+    height: 350px;
+    width: 100%;
+    margin: 0%;
+    object-fit: cover;
+    position: relative;
+    float: top;
+  }
+  
+  .art1 {
+    width:100%;
+    height: 350px;
+    margin: 0px;
+    padding: 0px;
+    object-fit: cover;
+    float: left;
+  }
+  
+  .art2 {
+    width:100%;
+    height: 350px;
+    margin: 0px;
+    padding: 0px;
+    object-fit: cover;
+    float: right;
+  }
+  
+  a {
+    font-style: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+  dl li {
+    display: inline-block;
+    padding: 1%;
+  }
+  
+  #foot {
+    width: 100%;
+    background-color: rgb(155, 154, 154);
+    text-align: center;
+  }
+
+  .container {
+    padding: 0% 5% 0% 5%;
+    position: relative;
+  }
+  table {
+      text-align: center;
+      position: relative;
+      height: 370px;
+  }
+  .div1 {
+    height: 370px;
+    display: inline-block;
+    Text-align: center;
+    float: left;
+    padding: 0% 0% 1% 0%;
+  }
+  .div2 {
+    height: 370px;
+    display: inline-block;
+    Text-align: center;
+    float: right;
+    padding: 0% 0% 1% 0%;
+  }
+  .column1 {  
+  float: left;
+  width: 49%;
+  text-align: center;
+  position: relative;
+  }
+  
+  .column2 {  
+    float: right;
+    width: 49%;
+    text-align: center;
+    position: relative;
+  }
+
+  .row {
+    width: 100%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

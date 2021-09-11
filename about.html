@@ -1,166 +1,120 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-        My first Webseite
-    </title>
+    <meta charset="utf-8">
+    <title> Advanced Exercise | Nested Elements </title>
+    <span style=-webkit-text-stroke:0.2px yellow><span style=color:#410f28>
+            <h1> Advanced Exercise | Nested Elements</h1>
+        </span></span>
 </head>
-
 <style>
-
     body {
-        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(243, 243, 160);
+        color: yellow;
+        -webkit-text-stroke: 0.7px #8d4168;
+        padding: 50px;
     }
-    
-    .name {
-        display: inline-block;
-        margin: auto;
-        width: 40%;
-        position: relative;
-        right: -20%;
-    }
-    
-    .logo {
-        display: inline-block;
+
+    .div1 {
+        border: 2px outset #eef11b;
+        background-color: rgb(245, 90, 162);
+        text-align: center;
         padding: 20px;
-        width: 25%;
-        position: relative;
-        right: -30%;
     }
-    
-    .menu {
-        text-align: right;
-        background-color: rgb(185, 79, 79);
-        padding: 0% 5% 0% 0%;
-    }
-    
-    .first {
-        text-align: center;
-        font-size: 3em;
-        padding: 0% 20% 0% 20%;
-    }
-    
-    .samsung {
-        height: 30%;
+
+    .table {
+        border: 2px outset #eef11b;
+        background-image: url('https://cdn.pixabay.com/photo/2016/05/01/11/18/blossom-1364759_1280.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 50px 150px 50px 300px;
         width: 100%;
-        margin: 0px;
-    
+        font-family: fantasy;
     }
-    
-    .art {
-        display: inline-block;
-        width: 44%;
-        height: 35%;
-        margin: 0px;
-        position:relative;
-    }
-    
-    footer {
-        background-color: rgb(155, 154, 154);
-        text-align: center;
-        padding: 1%;
-    }
-    
-    a {
-        font-style: bold;
-        color: white;
-        text-decoration: none;
-        font-size: 1.5em;
-    }
-    
-    main {
-        margin: auto;
-        padding: 0% 5% 0% 5%;
-    }
-    
-    dl li {
-        display: inline-block;
-        padding: 1%;
-    }
-    
-    .fig {
-        max-width: 100%;
-        max-height: 100%;
-        display: block;
-        object-fit: cover;
-        margin: 0px;
-    }
-        
-        table {
-            column-gap: 1em;
-            border-width: 90%;
-            column-rule: 1em;
-            column-width: 44%;
-        }
-    </style>
-    
+</style>
+<header>
+    <span style=color:#410f28>
+        <p><b>Create a planner for activities to do in Vienna over the weekend.<br />You will need 3 rows and 3
+                columns.<br />The first row will contain the headings Day, Morning and Afternoon.<br />The second row
+                contains all the information for Saturday.<br />Place descriptive lists within each of the two empty
+                table cells(the cells for the morning and afternoon).<br />For Sunday, use ordered lists to rank your
+                activities.<br />Within the ordered lists you should nest unordered lists with more information on each
+                activity you plan.</p></b>
+    </span>
+    <h1>
+        <div class=div1>Planner</div>
+    </h1>
+</header>
 
 <body>
-    <header style="background-color:rgb(155, 154, 154)">
-        <div class=name>
-            <h3>
-                Laura Moldovan - Full-Stack Web Developer
-            </h3><br />
-        </div>
-        <div class=logo>
-            <img src="img/logo.png" alt="CodeFactory" width="100%">
-        </div>
-        <nav class=menu>
-            <dl>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact">Contact</a></li>
-            </dl>
-        </nav>
-    </header>
-    <main>
-        <div class="first">
-            <h3>This is my first Website :D</h3>
-        </div>
-        <div class="samsung">
-            <figure>
-                <img src="img/Phone.png" alt="Phone" />
-                <figcaption>
-                    <center>
-                        <h3>
-                            Samsung Galaxy S11/S20 Plus video leaks showing Phone in real life
-                        </h3>
-                    </center>
-                </figcaption>
-            </figure>
-        </div>
-        <div style=position: relative; <div class="art">
-            <figure class=fig float=left>
-                <img src="img/Debit_card_ATM.jpg" alt="Debit Card" ; />
-                <figcaption>
-                    <h3>
-                        <center>
-                            Police are Investigating three ATM Explosions in two Florida counties
-                        </center>
-                    </h3>
-                </figcaption>
-            </figure>
-        </div>
-        <div class="art">
-            <figure class=fig float=right>
-                <img src="img/Taxify-Scooters.jpg" alt="Taxyfy" ; />
-                <figcaption>
-                    <h3>
-                        <center>E-Scooter firm Bolt pulls out of 12 cities</center>
-                    </h3>
-                </figcaption>
-            </figure>
-        </div>
-        </div>
-    </main>
-    <footer>
-        <img src="img/logo.png" alt="CodeFactory" width="20%">
-        <p>Laura Moldovan CodeFactory 2021</p>
-    </footer>
+    <table class=table>
+        <tr>
+            <th>
+                <h3>Day</h3>
+            </th>
+            <th>
+                <h3>Morning</h3>
+            </th>
+            <th>
+                <h3>Afternoon</h3>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <h3>Saturday</h3>
+            </th>
+            <td>
+                <dl>
+                    <li>Breakfast with family</li>
+                    <li>Hair stylist Appointment</li>
+                </dl>
+            </td>
+            <td>
+                <dl>
+                    <li>Lunch with friends</li>
+                    <li>Prepare for Clubbing</li>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <h3>Sunnday</h3>
+            </th>
+            <td>
+                <ol>
+                    <li><b>Phone calls</b>
+                        <ul>
+                            <li>Friends</li>
+                            <li>Family</li>
+                        </ul>
+                    </li>
+                    <li><b>Beauty Care</b>
+                        <ul>
+                            <li>Manicure & Pedicure</li>
+                            <li>Face Peeling & Mask</li>
+                        </ul>
+                    </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                    <li><b>Going out</b>
+                        <ul>
+                            <li>Swimm & Sunnbath</li>
+                            <li>Praterstern</li>
+                        </ul>
+                    </li>
+                    <li><b>Dating</b>
+                        <ul>
+                            <li>Jason Momoa</li>
+                            <li>Channing Tatum</li>
+                        </ul>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>
