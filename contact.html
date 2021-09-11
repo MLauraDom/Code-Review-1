@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head lang="en">
+       <meta charset="utf-8">
+       <title> Day 3 Exercise 1 </title>
+   </head>
+   <style>
+        body{
+        background-color:#FFF9A6;
+        color: #FFF9A6;
+        padding: 50px;
+        }
+        .div1{
+        border: 5px outset #350404;
+        background-color: #7F0707;
+        text-align: center;
+        padding: 20px
+        }
+        .div2{
+        border: 5px outset #7F0707;
+        background-image: url("https://www.leder-fiedler.de/tl_files/leder-fiedler/produkte/moebelleder/bridge/thumb/leder-fiedler_BRIDGE_bordeaux.jpg");
+        text-align: center;
+        padding: 20px
+        }
+   </style>
+   <body>
+       <header>
+            <center>
+            <h1><span style=color:#350404>Contact us</span></h1>
+            </center>
+       </header>
+        <main>
+            <div class=div2>
+            <center>
+            <form>
+                <table class=div1>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>E-Mail</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="firstname" placeholder="First name" fullsize></td>
+                        <td><input type="text" name="lastname"  placeholder="Family Name" fullsize><br/></td>
+                        <td><input type="text" name="email" placeholder="example@email.com" fullsize><br></td>
+                    </tr>
+                </table>
+                <table class=div1>
+                    <tr>
+                        <th type="fullsize"><center>Select gender:</center> </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center><input type="radio" name="gender" value="male" checked> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="other"> Other
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><center>Your Message * </center></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea name="message" rows="10" cols="40" fullwidth> Write your message here...</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center><input type="submit" value="Submit"></center>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            </center>
+            </div>
+        </main>
+    </body>
+</html>

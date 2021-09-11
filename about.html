@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        My first Webseite
+    </title>
+</head>
+
+<style>
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .name {
+        display: inline-block;
+        margin: auto;
+        width: 40%;
+        position: relative;
+        right: -20%;
+    }
+    
+    .logo {
+        display: inline-block;
+        padding: 20px;
+        width: 25%;
+        position: relative;
+        right: -30%;
+    }
+    
+    .menu {
+        text-align: right;
+        background-color: rgb(185, 79, 79);
+        padding: 0% 5% 0% 0%;
+    }
+    
+    .first {
+        text-align: center;
+        font-size: 3em;
+        padding: 0% 20% 0% 20%;
+    }
+    
+    .samsung {
+        height: 30%;
+        width: 100%;
+        margin: 0px;
+    
+    }
+    
+    .art {
+        display: inline-block;
+        width: 44%;
+        height: 35%;
+        margin: 0px;
+        position:relative;
+    }
+    
+    footer {
+        background-color: rgb(155, 154, 154);
+        text-align: center;
+        padding: 1%;
+    }
+    
+    a {
+        font-style: bold;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+    
+    main {
+        margin: auto;
+        padding: 0% 5% 0% 5%;
+    }
+    
+    dl li {
+        display: inline-block;
+        padding: 1%;
+    }
+    
+    .fig {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        object-fit: cover;
+        margin: 0px;
+    }
+        
+        table {
+            column-gap: 1em;
+            border-width: 90%;
+            column-rule: 1em;
+            column-width: 44%;
+        }
+    </style>
+    
+
+<body>
+    <header style="background-color:rgb(155, 154, 154)">
+        <div class=name>
+            <h3>
+                Laura Moldovan - Full-Stack Web Developer
+            </h3><br />
+        </div>
+        <div class=logo>
+            <img src="img/logo.png" alt="CodeFactory" width="100%">
+        </div>
+        <nav class=menu>
+            <dl>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact">Contact</a></li>
+            </dl>
+        </nav>
+    </header>
+    <main>
+        <div class="first">
+            <h3>This is my first Website :D</h3>
+        </div>
+        <div class="samsung">
+            <figure>
+                <img src="img/Phone.png" alt="Phone" />
+                <figcaption>
+                    <center>
+                        <h3>
+                            Samsung Galaxy S11/S20 Plus video leaks showing Phone in real life
+                        </h3>
+                    </center>
+                </figcaption>
+            </figure>
+        </div>
+        <div style=position: relative; <div class="art">
+            <figure class=fig float=left>
+                <img src="img/Debit_card_ATM.jpg" alt="Debit Card" ; />
+                <figcaption>
+                    <h3>
+                        <center>
+                            Police are Investigating three ATM Explosions in two Florida counties
+                        </center>
+                    </h3>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="art">
+            <figure class=fig float=right>
+                <img src="img/Taxify-Scooters.jpg" alt="Taxyfy" ; />
+                <figcaption>
+                    <h3>
+                        <center>E-Scooter firm Bolt pulls out of 12 cities</center>
+                    </h3>
+                </figcaption>
+            </figure>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <img src="img/logo.png" alt="CodeFactory" width="20%">
+        <p>Laura Moldovan CodeFactory 2021</p>
+    </footer>
+</body>
+
+</html>
