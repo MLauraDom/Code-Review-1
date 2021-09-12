@@ -4,7 +4,7 @@
 <head>
   <meta charset=’utf-8’>
   <titel> Intermediate Exercise | Contact form </title>
-
+    <link rel='stylesheet' type='text/css' href='styles.css'>
 </head>
 
 <!-- First i thought i have to make a contact form for a radio station. 
@@ -16,92 +16,109 @@ After my research and after i already wrote the Introduction text from the first
 And then i saw what a Radio Button actually was...
 -->
 
-<style>
-  body {
-    background-image: url('https://cdn.pixabay.com/photo/2020/02/23/09/26/sound-4872769_1280.jpg');
-  }
-
-  .div1 {
-    border: 5px outset #FFF9A6;
-    background-color: #7F0707;
-    text-align: center;
-    padding: 20px
-  }
-
-  .div2 {
-    border: 5px outset #7F0707;
-    background-color: #FFF9A6;
-    text-align: center;
-    padding: 20px
-  }
-
-  .div3 {
-    color: #FFF9A6;
-  }
-</style>
-</header>
-<div class=div3>
-  <h2>Intermediate Exercise | Contact form</h2>
-  <p>Create an HTML page that can be used as a contact form for a Web page.
-    Create a form with text input fields, radio buttons and a submitter button.
-    Try to make it as realistic and useful as possible.</p>
-</div>
-</header>
 
 <body>
+  <header>
+    <div id="name">
+      <p>Laura Moldovan - Full-Stack Web Developer</p>
+      <br />
+    </div>
+    <div id="logo1">
+      <img src="img/logo.png" alt="CodeFactory" width="100%">
+    </div>
+    <nav id="menu">
+      <dl>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </dl>
+    </nav>
+  </header>
+  <main id="maink">
+    <div class=div3k>
+      <h2>Intermediate Exercise | Contact form</h2>
+      <p>Create an HTML page that can be used as a contact form for a Web page.
+        Create a form with text input fields, radio buttons and a submitter button.
+        Try to make it as realistic and useful as possible.</p>
+    </div>
+    <div style="padding:3% 20% 3% 20%">
+      <center>
+        <h1><span style=color:white> Musical Dedications</span></h1>
+      </center>
 
+      <center><audio controls="controls">
+          <source src="http://62.178.16.231:8000/gipsyradio" type="audio/mp3" type="audio/ogg" />
+          <source src="track.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio></center>
+      <div class=div2k>
+        <p>
+          <b>
+            <span style=color:black>
+              Do you want to make a musical dedication to your loved ones?
+              Do you want to listen your favorite song or you just want your name to be spoked out loudly on the
+              radio?
+            </span>
+          </b>
+        <p>
 
-  <center>
-    <h1><span style=color:white> Musical Dedications</span></h1>
-  </center>
+        <h3>
+          <b>
+            <span style=color:#7F0707>
+              YOU ARE IN THE RIGHT PLACE!
+            </span>
+          </b>
+        </h3>
 
-  <center><audio controls="controls">
-      <source src="http://62.178.16.231:8000/gipsyradio" type="audio/mp3" type="audio/ogg" />
-      <source src="track.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio></center>
-  <div class=div2>
-    <p><b><span style=color:black>Do you want to make a musical dedication to your loved ones?
-          Do you want to listen your favorite song or you just want your name to be spoked out loudly on the
-          radio?</span></b>
-    <p>
+        <p>
+          <span style=color:black>
+            Fill in the form below, and we will broadcast your chosen song together with your message in
+            our next show "Balkan Party" on Saturday, starting with 8 p.m.!
+          </span>
+        </p>
+      </div>
 
-    <h3><b><span style=color:#7F0707>YOU ARE IN THE RIGHT PLACE!</span></b></h3>
+      <br />
 
-    <span style=color:black>Fill in the form below, and we will broadcast your chosen song together with your message in
-      our next show "Balkan Party" on Saturday, starting with 8 p.m.!</span></p>
-  </div>
-  <br />
-  <div class=div1>
-    <span style=color:white>
-      <form action="action_page.php">
-        First name:<br>
-        <input type="text" name="firstname" placeholder="First name"><br>
-        Last name:<br>
-        <input type="text" name="lastname" placeholder="Family Name"><br />
-        E-Mail:<br>
-        <input type="text" name="email" placeholder="example@email.com"><br>
-        </select>
-        <br />
-        Select gender: <br />
-        <input type="radio" name="gender" value="male" checked> Male <br />
-        <input type="radio" name="gender" value="female"> Female <br />
-        <input type="radio" name="gender" value="other"> Other <br /><br />
-        Wished Song:<br>
-        <input type="text" name="wishedsong" placeholder="The Artist - The Song"><br>
-        </select>
-        Your Message * <br />
-        <textarea name="message" rows="10" cols="40"> Write your message here...
-           </textarea>
-        <br />
-        <br />
-        <input type="submit" value="Submit">
-        <br />
-        <br />
-      </form>
-    </span>
-  </div>
-
+      <div class=div1k>
+        <span style=color:white>
+          <form action="action_page.php">
+            First name:<br>
+            <input type="text" name="firstname" placeholder="First name"><br>
+            Last name:<br>
+            <input type="text" name="lastname" placeholder="Family Name"><br />
+            E-Mail:<br>
+            <input type="text" name="email" placeholder="example@email.com"><br>
+            </select>
+            <br />
+            Select gender: <br />
+            <input type="radio" name="gender" value="male" checked> Male <br />
+            <input type="radio" name="gender" value="female"> Female <br />
+            <input type="radio" name="gender" value="other"> Other <br /><br />
+            Wished Song:<br>
+            <input type="text" name="wishedsong" placeholder="The Artist - The Song"><br>
+            </select>
+            Your Message * <br />
+            <textarea name="message" rows="10" cols="40"> Write your message here...
+        </textarea>
+            <br />
+            <br />
+            <input type="submit" value="Submit">
+            <br />
+            <br />
+          </form>
+        </span>
+      </div>
+    </div>
+  </main>
+  <footer id="foot">
+    <div id="logo2">
+      <img src="img/logo.png" alt="CodeFactory" width="100%">
+    </div>
+    <p>Laura Moldovan CodeFactory 2021</p>
+    <br />
+  </footer>
 </body>
 
 </html>

@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: rgb(155, 154, 154)
+    background-color: rgb(155, 154, 154);
 }  
 
 #name {
@@ -130,4 +130,55 @@ figcaption {
   content: "";
   display: table;
   clear: both;
+}
+
+/*Page "About Me" */
+#bodynest {
+  background-color: rgb(243, 243, 160);
+ 
+}
+
+#div1 {
+  border: 2px outset #eef11b;
+  background-color: rgb(245, 90, 162);
+  text-align: center;
+  padding: 20px;
+}
+
+#tablenest {
+  border: 2px outset #eef11b;
+  background-image: url('https://cdn.pixabay.com/photo/2016/05/01/11/18/blossom-1364759_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 50px 150px 50px 300px;
+  width: 100%;
+  font-family: fantasy;
+}
+#mainnest {
+  padding:5%;
+  color: yellow;
+  -webkit-text-stroke: 0.7px #8d4168;
+}
+
+/*Page "Contact" */
+
+#maink {
+  background-image: url('https://cdn.pixabay.com/photo/2020/02/23/09/26/sound-4872769_1280.jpg');
+}
+.div1k {
+  border: 5px outset #FFF9A6;
+  background-color: #7F0707;
+  text-align: center;
+  margin:auto;
+}
+
+.div2k {
+  border: 5px outset #7F0707;
+  background-color: #FFF9A6;
+  text-align: center;
+  padding: 15px;
+}
+
+.div3k {
+  color: #FFF9A6;
 }
