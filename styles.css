@@ -96,25 +96,26 @@ dl li {
 
 .column1 {  
 float: left;
-width: 42.5%;
+width: 42%;
 text-align: center;
-position: relative;
+display: inline-block;
 }
 
 .column2 {  
   float: right;
-  width: 42.5%;
+  width: 42%;
   text-align: center;
-  position: relative;
+  display: inline-block;
 }
 
 .row {
   width: 100%;
+  max-height: 400px;
 }
 
 figcaption {
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-style: bold;
   font-weight: bolder;
 }
@@ -153,6 +154,7 @@ figcaption {
   padding: 50px 150px 50px 300px;
   width: 100%;
   font-family: fantasy;
+  text-align: center;
 }
 #mainnest {
   padding:5%;
